@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="calendar">日历</string>
+    <string name="camera">相机</string>
+    <string name="contacts">联系人</string>
+    <string name="location">位置</string>
+    <string name="record_audio">麦克风</string>
+    <string name="phone">电话</string>
+    <string name="body_sensors">传感器</string>
+    <string name="sms">短信</string>
+    <string name="storage">存储</string>
+    <string name="request_permission">权限申请</string>
+    <string name="setting">去设置</string>
+    <string name="cancel">取消</string>
+    <string name="permission_tips">请在设置-应用-%1$s-权限中开启%2$s权限,以正常使用%3$s相关功能</string>
+</resources>

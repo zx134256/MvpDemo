@@ -1,0 +1,92 @@
+ext {
+    /**
+     * android属性配置
+     */
+    cfgAndroid = [
+            compileSdkVersion: 28,
+            buildToolsVersion: '28.0.3',
+            minSdkVersion    : 17,
+            targetSdkVersion : 28,
+            versionCode      : 1001,
+            versionName      : '1.0.0.1',
+    ]
+
+    /**
+     * 接口地址
+     */
+    apiAddress = [
+            //线上
+            release: 'http://106.75.232.46:8083/',
+            //测试1
+            debug  : 'http://106.75.232.46:8083',
+    ]
+
+    /**
+     * 版本
+     */
+    support_version = '26.1.0'
+    retrofit_version = '2.3.0'
+    rx_lifecycle_version = '2.2.0'
+    glide_version = '4.2.0'
+    refresh_layout_version = '1.0.5.1'
+    anko_version = '0.10.8'
+    /**
+     * 依赖
+     */
+    cfgDependencies = [
+            kotlin                 : "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version",
+            cardView               : "com.android.support:cardview-v7:$support_version",
+            constraintLayout       : "com.android.support.constraint:constraint-layout:1.1.3",
+            //下拉刷新
+            refreshLayout          : "com.scwang.smartrefresh:SmartRefreshLayout:$refresh_layout_version",
+            refreshLayoutHeader    : "com.scwang.smartrefresh:SmartRefreshHeader:$refresh_layout_version",
+            retrofit               : "com.squareup.retrofit2:retrofit:$retrofit_version",
+            //ResponseBody转换
+//            retrofitGson         : "com.squareup.retrofit2:converter-gson:$retrofit_version",
+            gson                   : 'com.google.code.gson:gson:2.8.5',
+            // 添加日志拦截器打印请求Log
+            okHttpLoggind          : 'com.squareup.okhttp3:logging-interceptor:3.4.1',
+            rxJava                 : 'io.reactivex.rxjava2:rxjava:2.1.5',
+            //RxJava CallAdapter
+            rxJavaAdapter          : "com.squareup.retrofit2:adapter-rxjava2:$retrofit_version",
+            rxAndroid              : 'io.reactivex.rxjava2:rxandroid:2.0.1',
+            //RxLifecycle 自动取消订阅,防止内存泄漏
+            rxLifecycleComponents  : "com.trello.rxlifecycle2:rxlifecycle-components:${rx_lifecycle_version}",
+            //日志打印
+            logger                 : 'com.orhanobut:logger:1.15',
+            //动态权限请求
+            rxPermissions          : 'com.tbruyelle.rxpermissions2:rxpermissions:0.9.4@aar',
+            rxBinding              : 'com.jakewharton.rxbinding2:rxbinding:2.0.0',
+            multidex               : 'com.android.support:multidex:1.0.2',
+            //bilibili相册
+            //boxing                 : 'com.bilibili:boxing:1.0.0',
+            //boxingIml              : 'com.bilibili:boxing-impl:1.0.0',
+            //缩放view
+            photoview              : 'com.bm.photoview:library:1.4.1',
+            //圆形
+            circleImageView        : 'de.hdodenhof:circleimageview:2.2.0',
+            //变形菜单动画
+            menu                   : 'com.balysv.materialmenu:material-menu:2.0.0',
+            //loading
+            spin                   : 'com.github.ybq:Android-SpinKit:1.2.0',
+
+            eventBus               : 'org.greenrobot:eventbus:3.1.1',
+            //微信
+            opensdk                : 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:+',
+
+            libHappyDns            : 'com.qiniu:happy-dns:0.2.9',
+            libOkio                : 'com.squareup.okio:okio:1.9.0',
+            bugly                  : 'com.tencent.bugly:crashreport:latest.release',
+            //webView
+            agentweb               : 'com.just.agentweb:agentweb:4.0.2',
+            //adapter
+            BaseRecyclerViewAdapter: 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.34',
+            picasso                : 'com.squareup.picasso:picasso:2.5.2',
+            design                 : 'com.android.support:design:27.1.1',
+            // Anko Commons  Anko https://github.com/Kotlin/anko
+            ankocommons            : "org.jetbrains.anko:anko-commons:$anko_version",
+
+
+    ]
+
+}

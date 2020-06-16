@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.leshu.gamebox">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" /> <!-- 安装未知来源应用 -->
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" /> <!-- android 9.0上使用前台服务，需要添加权限 -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" /> <!-- Android6.0 蓝牙扫描需要 -->
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:name="com.leshu.gamebox.base.SophixStubApplication"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+
+        <!--全面屏-->
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.1" />
+
+        <meta-data
+            android:name="com.taobao.android.hotfix.IDSECRET"
+            android:value="30225588-1" />
+        <meta-data
+            android:name="com.taobao.android.hotfix.APPSECRET"
+            android:value="c5cbeb22e628284cfe3dbe7862660c12" />
+        <meta-data
+            android:name="com.taobao.android.hotfix.RSASECRET"
+            android:value="MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC3I1lAcLNZ4CyuNzZpVUDIEEdmIFpqkLXEgsV2ihmS/rX8pEm37XDFeFGbjh2EHImuMFGaZmytFOFpwliBhr2UJBDTZM1v/fa5poTIplsopm/Ogj/0KtPSRDYLCM8VbozfQJX1ddbUTEWSL7ZkbbaR9I1E62iZJ8OZL3TvCNBAcN9bLG6XVtmXX07VIzBNLbM0+Gq5tIuUPWEnxqRhUatjQRa7v8jqAbcr7EElXk7tnukyiyKNjVws3CkTfUNhOR2KIkC3MbGgiLz0ahBICljKkEdOA+n7FamSZWlGBOdQhiCiv0Iuv2MH0JrWiE6Nvj4sgALTYq9eNylrFzNAdWepAgMBAAECggEAENyOUSKPQM0lD/1BYz1YM5NcH4kHChy8v5USvTFF3YTaGKK/rtGLuoKzcNEK4qkF/CWyvbaEdwMfJe+g2nwfZE5VxkDXsWH+n2U3gInghsOcM7VGUiLHUeq51xY+isic68k0hV8OIonLNgRylJiNYK7Veuz5unAw0B/QclmrYuNZN7hYpUpSgTFzOYMNH88cWYBMEm4QnpPmhRX7jsGb/QEWUIsX86DQHEvwR1Lja06pIptRS1ewMtA3RCaQ3cYzKWtiIFO7xyUd/i8LEdbh+oOHtiZOBQOPMgxieK7iG8EUjh2O07wmJb6LVFJ7Eb8tBht09FwYkcs+hvzI1a/8AQKBgQD8GtOzCB7QiqTMSPj8eusu0Uf44Bhsy3IUyQ2EvzZwVrvhvJMcdOwy0m33TDAzNUQSHS9+x8q2vy7j9czN0V4/6kU+ZRVaYxoapoaO/aVsHTI6dKEEnhoWxnqc1BAdjfPbcHVB2B/r40VAfHbdAWScvxu9XjawOSM5BT3eaBTs6QKBgQC597s7G7GNhmixxQEbWOkpJaJ2UP3TaHboiqfJTo/fCvKGo/uxWSKYaZz7DTrjtY0jkQ2/1KcWr2uBg/GVMo6LKfrle7HC9yLltPDGEYuKRh9rY3DN+QtY2+MjzERC5wHsTh2rF3OETKZ1zqndTR/l7waiS0uFub9T1cxw/wjswQKBgDiCQuWkclPIX/wydy0Q2FqcKofMo2zvhVjHYDJbMfaoWmDVBhyg0Ljrlh6Sg1NXIzT0OcsvOW8RF4+dbxTLU1b8Sh0cR1cFU7qZjRvMGyJKwRF9RwJj9fEY+C7jEeGuCfUsFfx2V2FmhgVYYMRVJZpE9BDUZ2nExPJpDF8n8VjRAoGAcNHw/aAEbHahZ0+8Jyoecb8KO7tQ8gOLN/J+bitCLy9GCRbM6D/KNCrGeKwDEQggcvZaIAnTwHh1wSIZ2sjMH3M9aiFLq5sgybim5ZLZU+7MuuqeEedH0gW8XAhdVTUuPnz5lMVqaFXUGt5gwQg8FNOY87a4P417nFG1cMvYT0ECgYEA3m39jUSLomLeYbC4Ssbx+Zv0gmXvIxRmVcfLEN3l2cpla4HTpxfAS9H9NWZZPkKm7wOIxdIaDRIugR73U5q7Hw/nRVKd4wKPkUfDyurgD/mVgey0Gs5dH562uxSk7dz8EsdbNQPHnaWkiLB3E48dJv5kTz5Wc+7Apvem9ZkHd50=" />
+
+        <activity
+            android:name=".activity.AESplashActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|locale"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name="com.leshu.gamebox.wxapi.WXEntryActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:taskAffinity="com.leshu.gamebox"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+
+        <activity
+            android:name="com.leshu.gamebox.MainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|locale"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

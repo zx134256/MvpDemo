@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AudioExplore</string>
+    <string name="web_url_error">无法访问该页面</string>
+    <string name="confirm">确定</string>
+    <string name="empty_tips">哎呦喂~列表还没有数据...</string>
+    <string name="system_error">系统繁忙,稍后重试...</string>
+    <string name="failure_pay">支付失败</string>
+    <string name="success_pay">支付成功</string>
+    <string name="error_wx_app">当前微信版本不支持支付，请更新后再支付</string>
+</resources>
